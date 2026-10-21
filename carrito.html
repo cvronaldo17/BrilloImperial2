@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo Imperial - Carrito</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Brillo Imperial</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1>Mi carrito</h1>
+        <p class="intro">Aquí aparecen los servicios que elegiste.</p>
+        <div class="tarjeta">
+            <div id="lista-carrito">Tu carrito está vacío.</div>
+            <h2 class="total">Total: $<span id="total">0</span> MXN</h2>
+            <button class="boton" id="vaciar">Vaciar carrito</button>
+            <a class="boton boton-claro" href="catalogo.html">Volver al catálogo</a>
+            <p class="aviso">Es una demostración escolar; no realiza pagos ni citas.</p>
+            <p id="mensaje"></p>
+        </div>
+    </main>
+
+    <footer><p>Brillo Imperial | Página comercial escolar</p></footer>
+    <script src="carrito.js"></script>
+</body>
+</html>

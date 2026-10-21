@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo Imperial - Catálogo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Brillo Imperial</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1>Catálogo de servicios</h1>
+        <p class="intro">Elige el servicio que necesita tu auto.</p>
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <h2>Lavado exterior</h2>
+                <p>Lavado de carrocería, rines y ventanas.</p>
+                <p class="precio">$80 MXN</p>
+                <button class="boton agregar" data-nombre="Lavado exterior" data-precio="80">Agregar al carrito</button>
+            </article>
+            <article class="tarjeta">
+                <h2>Lavado completo</h2>
+                <p>Limpieza por dentro y por fuera.</p>
+                <p class="precio">$150 MXN</p>
+                <button class="boton agregar" data-nombre="Lavado completo" data-precio="150">Agregar al carrito</button>
+            </article>
+            <article class="tarjeta">
+                <h2>Lavado de interiores</h2>
+                <p>Limpieza de tablero, tapetes y asientos.</p>
+                <p class="precio">$100 MXN</p>
+                <button class="boton agregar" data-nombre="Lavado de interiores" data-precio="100">Agregar al carrito</button>
+            </article>
+        </div>
+        <p class="aviso">Precios de ejemplo. Cámbialos por los precios reales del negocio.</p>
+        <p id="mensaje"></p>
+    </main>
+
+    <footer><p>Brillo Imperial | Página comercial escolar</p></footer>
+    <script src="carrito.js"></script>
+</body>
+</html>

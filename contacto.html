@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo Imperial - Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Brillo Imperial</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1>Contacto</h1>
+        <p class="intro">Completa esta información con los datos reales del carwash.</p>
+        <div class="tarjetas contacto">
+            <section class="tarjeta">
+                <h2>Datos del negocio</h2>
+                <p><strong>Propietario:</strong>Edgar Ivan Guerra Gonzaléz</p>
+                <p><strong>Dirección:</strong> Manuel Lopez Cotilla #12, Huescalapa</p>
+                <p><strong>Teléfono:</strong>341 145 9512</p>
+                <p><strong>Horario:</strong> Lunes a Viernes de 2:30pm a 7:00pm. Sabado y Domingo de 11:00am a 7:00pm</p>
+            </section>
+            <form class="tarjeta" id="form-contacto">
+                <h2>Envíanos un mensaje</h2>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" required>
+                <label for="correo">Correo:</label>
+                <input id="correo" name="correo" type="email" required>
+                <label for="mensaje-texto">Mensaje:</label>
+                <textarea id="mensaje-texto" name="mensaje" rows="4" required></textarea>
+                <button class="boton" type="submit">Enviar</button>
+                <p id="respuesta"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer><p>Brillo Imperial | Página comercial escolar</p></footer>
+    <script src="carrito.js"></script>
+</body>
+</html>
